@@ -1,0 +1,14 @@
+<h1>Random Beer</h1>
+<section>
+        {{#each responseFromAPI}}
+        <div class="beer">
+            {{>beerpartial this}}
+        </div>
+        {{/each}}
+
+        <div class="buttons">
+            <a class="btn btn-primary button-margin" href="/random-beer">Choose another random beer</a>
+
+        </div>
+
+ </section>
